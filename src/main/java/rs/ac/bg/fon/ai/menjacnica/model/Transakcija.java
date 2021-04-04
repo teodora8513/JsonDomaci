@@ -1,7 +1,7 @@
 package rs.ac.bg.fon.ai.menjacnica.model;
 
 import java.math.BigDecimal;
-
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Transakcija {
@@ -70,7 +70,8 @@ public class Transakcija {
 	@Override
 	public String toString() {
 		return "Transakcija [izvornaValuta=" + izvornaValuta + ", krajnjaValuta=" + krajnjaValuta + ", pocetniIznos="
-				+ pocetniIznos + ", konvertovaniIznos=" + konvertovaniIznos + ", datum=" + datum + "]";
+				+ pocetniIznos + ", konvertovaniIznos=" + konvertovaniIznos + ", datum=" +
+				new SimpleDateFormat("dd.MMM.YYYY ss:mm:HH").format(datum) + "]";
 	}
 
 }
