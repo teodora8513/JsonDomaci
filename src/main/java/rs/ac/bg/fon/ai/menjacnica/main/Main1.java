@@ -26,7 +26,7 @@ public class Main1 {
 	private static final String CURRENCIES = "CAD";
 	private static final BigDecimal AMMOUNT = new BigDecimal(18);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Gson gson = new Gson();
 		
 		try {
@@ -53,9 +53,10 @@ public class Main1 {
 			System.out.println(transakcija);
 			
 			upisiUJsonTransakciju(transakcija);
+			
 			}
 			else {
-				
+				throw new Exception("The transaction isnt successful");
 			}
 				
 		} catch (MalformedURLException e) {
@@ -78,7 +79,7 @@ public class Main1 {
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			gson.toJson(obj, file);
 		}catch(Exception e) {
-			
+			System.out.println(e.getMessage());
 		}
 		
 	}

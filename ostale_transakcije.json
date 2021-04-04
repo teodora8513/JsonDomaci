@@ -1,0 +1,23 @@
+[
+  {
+    "source": "USD",
+    "currencies": "EUR",
+    "ammount": 100,
+    "converted": 84.874500,
+    "date": "04.Apr.2021 05:05:14"
+  },
+  {
+    "source": "USD",
+    "currencies": "CAD",
+    "ammount": 100,
+    "converted": 84.874500,
+    "date": "04.Apr.2021 05:05:14"
+  },
+  {
+    "source": "USD",
+    "currencies": "CHF",
+    "ammount": 100,
+    "converted": 84.874500,
+    "date": "04.Apr.2021 05:05:14"
+  }
+]
